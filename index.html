@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+  secondsteeplabs.com: 법인 Second Steep Labs LLC의 회사 페이지 (초안, 2026-10-05).
+  왜 있나: D-U-N-S 신청과 애플 조직 전환은 회사 도메인의 "실제로 작동하는 웹사이트"를 본다
+  (~/steepnotes/reports/개인에서 법인 전환 절차.md 9단계). 소셜 링크나 내용이 거의 없는 페이지는 안 된다.
+
+  코드 그물이 못 닿는 새 표면이라 손으로 옮긴 규율(CLAUDE.md §2.3 "새 매체의 표면"):
+  1. 법적 이름은 증명서 철자 그대로: "Second Steep Labs LLC" (쉼표 없음).
+  2. 앱의 상태(출시, 베타, 준비 중)는 스토어 실물과 맞아야 한다. 올리기 전에 다시 조회한다
+     (2026-10-05 애플 조회: This Side Up 1.1.0만 공개. Brainfogg와 Steep Notes는 미공개).
+  3. 앱이 지키지 않는 약속을 회사 이름으로 하지 않는다. 데이터 처리 문장은 각 앱의 개인정보처리방침이 소유한다.
+  4. 긴 줄표와 가운뎃점을 쓰지 않는다.
+  5. 외부 요청 없음(글꼴, 분석, 스크립트). 그래서 이 페이지는 아무것도 수집하지 않는다.
+
+  Jin 판정(2026-10-05): 바닥글 주소는 도시까지만(거리 주소는 넣지 않는다). 출시 전 앱도 상태 표시와 함께 올린다.
+  카피 렌즈 1회(2026-10-05): A1, B1, B2, C1, C2 반영.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Second Steep Labs</title>
+    <meta
+      name="description"
+      content="Second Steep Labs is an independent software company in Decatur, Georgia. We make apps that each do one job well."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="./">Second Steep Labs</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1>Apps that do one job well.</h1>
+          <p class="lead">
+            Second Steep Labs is an independent software company in Decatur, Georgia. Every app we
+            make starts with a problem we ran into ourselves. We build for iPhone first, with
+            Android to follow.
+          </p>
+        </section>
+
+        <section aria-labelledby="apps">
+          <h2 id="apps">Our apps</h2>
+          <ul class="apps">
+            <li class="app">
+              <div class="app-head">
+                <h3>This Side Up</h3>
+                <span class="status status-live">On the App Store</span>
+              </div>
+              <p class="app-line">Photo proof for the boxes you ship and the ones you open.</p>
+              <p>
+                It walks you through the photos your carrier requires, keeps each package's photos
+                together, and counts down the days you have left to file a claim. When a claim comes
+                in, export everything as a PDF or a ZIP.
+              </p>
+              <p class="links">
+                <a href="https://apps.apple.com/us/app/this-side-up/id6806478365">App Store</a>
+                <a href="https://thissideup.app">thissideup.app</a>
+              </p>
+            </li>
+            <li class="app">
+              <div class="app-head">
+                <h3>Steep Notes</h3>
+                <span class="status">Coming soon</span>
+              </div>
+              <p class="app-line">A week of loose thoughts, brewed into a few sentences.</p>
+              <p>
+                Drop in pieces all week: a line from a meeting, a worry, a half-formed idea. At the
+                brew time you pick, Steep turns them into short sentences, and you keep the few worth
+                keeping.
+              </p>
+              <p class="links">
+                <a href="https://steepnotes.app">steepnotes.app</a>
+              </p>
+            </li>
+            <li class="app">
+              <div class="app-head">
+                <h3>Brainfogg</h3>
+                <span class="status">In beta</span>
+              </div>
+              <p class="app-line">Email in. Schedule done.</p>
+              <p>
+                Forward a school email to Brainfogg, and it puts the event on your calendar: the date,
+                the time, and what your kid has to bring.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="name">
+          <h2 id="name">About the name</h2>
+          <p>
+            A lot of good loose-leaf tea tastes better on the second steep, once the leaves have
+            opened up.
+            That's how we like to build: ship something small, listen to the people using it, then
+            come back and make it better.
+          </p>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <p>
+            Questions about one of our apps, a billing problem, or anything else:
+            <a href="mailto:support@secondsteeplabs.com">support@secondsteeplabs.com</a>
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Second Steep Labs LLC, a Georgia limited liability company</p>
+        <p>Decatur, Georgia</p>
+        <p>&copy; 2026 Second Steep Labs LLC</p>
+      </footer>
+    </div>
+  </body>
+</html>
