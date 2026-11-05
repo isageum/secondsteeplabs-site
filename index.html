@@ -1,19 +1,22 @@
 <!doctype html>
 <!--
-  secondsteeplabs.com: 법인 Second Steep Labs LLC의 회사 페이지 (초안, 2026-10-05).
-  왜 있나: D-U-N-S 신청과 애플 조직 전환은 회사 도메인의 "실제로 작동하는 웹사이트"를 본다
-  (~/steepnotes/reports/개인에서 법인 전환 절차.md 9단계). 소셜 링크나 내용이 거의 없는 페이지는 안 된다.
+  secondsteeplabs.com: 법인 Second Steep Labs LLC의 회사 페이지.
+  첫판 2026-10-05. 두 번째 판 2026-11-04. Jin 지시: "Brainfogg의 디자인 컨셉으로", "타이포그래피 위주의
+  배치와 폰트의 다양한 사용", "이미지는 앱아이콘과 스크린샷만". 그림과 장식 아이콘을 쓰지 않는다.
+  왜 있나: D-U-N-S 신청, 구글 Play 웹사이트 인증(2026-11-04 확인됨), 애플 조직 전환은 회사 도메인의
+  "실제로 작동하는 웹사이트"를 본다. 법인 쪽 기록은 secondsteeplabs-admin/COMPANY.md.
 
-  코드 그물이 못 닿는 새 표면이라 손으로 옮긴 규율(CLAUDE.md §2.3 "새 매체의 표면"):
+  코드 그물이 못 닿는 새 표면이라 손으로 옮긴 규율:
   1. 법적 이름은 증명서 철자 그대로: "Second Steep Labs LLC" (쉼표 없음).
-  2. 앱의 상태(출시, 베타, 준비 중)는 스토어 실물과 맞아야 한다. 올리기 전에 다시 조회한다
-     (2026-10-05 애플 조회: This Side Up 1.1.0만 공개. Brainfogg와 Steep Notes는 미공개).
-  3. 앱이 지키지 않는 약속을 회사 이름으로 하지 않는다. 데이터 처리 문장은 각 앱의 개인정보처리방침이 소유한다.
+  2. 상태 표시는 스토어 실물과 맞아야 한다. 올리기 전에 다시 조회한다
+     (2026-11-04 조회: This Side Up 1.1.0만 공개. Steep Notes, Brainfogg 미공개. 구글 Play 공개 앱 0).
+  3. 앱이 지키지 않는 약속을 회사 이름으로 하지 않는다. 가격, 출시일, 정확도, 데이터 처리 문장은 쓰지 않는다.
   4. 긴 줄표와 가운뎃점을 쓰지 않는다.
-  5. 외부 요청 없음(글꼴, 분석, 스크립트). 그래서 이 페이지는 아무것도 수집하지 않는다.
+  5. 외부 요청 없음. 글꼴도 assets/fonts에 같이 둔다(Brainfogg와 같은 파일, SIL OFL).
+  6. 링크는 실제로 열리는 곳만 건다(2026-11-04: brainfogg.ai 첫 화면이 깨져 있어 걸지 않았다).
 
-  Jin 판정(2026-10-05): 바닥글 주소는 도시까지만(거리 주소는 넣지 않는다). 출시 전 앱도 상태 표시와 함께 올린다.
-  카피 렌즈 1회(2026-10-05): A1, B1, B2, C1, C2 반영.
+  Jin 판정(2026-10-05): 바닥글 주소는 도시까지만. 출시 전 앱도 상태 표시와 함께 올린다.
+  Jin 판정(2026-11-04): 개발 중인 앱과 게임까지 전부 올린다.
 -->
 <html lang="en">
   <head>
@@ -22,98 +25,206 @@
     <title>Second Steep Labs</title>
     <meta
       name="description"
-      content="Second Steep Labs is an independent software company in Decatur, Georgia. We make apps that each do one job well."
+      content="Second Steep Labs is an independent studio in Decatur, Georgia, making small apps and games."
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="wrap">
-      <header>
-        <a class="brand" href="./">Second Steep Labs</a>
-      </header>
+    <header class="masthead">
+      <div class="wrap mast-inner">
+        <a class="wordmark" href="./">Second Steep Labs</a>
+        <nav aria-label="Sections">
+          <a href="#work">Work</a>
+          <a href="#name">The name</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="wrap mast-date">
+        <span>Decatur, Georgia</span>
+        <span>Est. 2026</span>
+      </div>
+    </header>
 
-      <main>
-        <section class="hero">
-          <h1>Apps that do one job well.</h1>
-          <p class="lead">
-            Second Steep Labs is an independent software company in Decatur, Georgia. Every app we
-            make starts with a problem we ran into ourselves. We build for iPhone first, with
-            Android to follow.
-          </p>
-        </section>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <p class="overline">An independent studio</p>
+          <h1>
+            Small apps that do <span class="ul">one job</span> well.
+            <span class="h1-sub">And a few games.</span>
+          </h1>
+          <div class="hero-cols">
+            <p class="lead">
+              Our apps start with problems we ran into ourselves. Our games start with ideas we
+              couldn't stop thinking about.
+            </p>
+            <dl class="tally">
+              <div><dt>Out now</dt><dd>1</dd></div>
+              <div><dt>Steeping</dt><dd>4</dd></div>
+              <div><dt>In the tin</dt><dd>2</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
 
-        <section aria-labelledby="apps">
-          <h2 id="apps">Our apps</h2>
-          <ul class="apps">
-            <li class="app">
-              <div class="app-head">
-                <h3>This Side Up</h3>
-                <span class="status status-live">On the App Store</span>
-              </div>
-              <p class="app-line">Photo proof for the boxes you ship and the ones you open.</p>
-              <p>
-                It walks you through the photos your carrier requires, keeps each package's photos
-                together, and counts down the days you have left to file a claim. When a claim comes
-                in, export everything as a PDF or a ZIP.
+      <section id="work" aria-labelledby="work-h">
+        <div class="wrap">
+          <h2 id="work-h" class="rule-head"><span>The work</span></h2>
+
+          <article class="project project-lead">
+            <p class="num">01</p>
+            <div class="project-text">
+              <p class="tag tag-live">On the App Store</p>
+              <h3>This Side Up</h3>
+              <p class="line">Photo proof for the boxes you ship and the ones you open.</p>
+              <p class="body">
+                A buyer says it arrived broken, and the carrier wants the photos you were supposed to
+                take before you handed the box over. This Side Up walks you through those shots, keeps
+                each package's photos together, and counts down the days you have left to file.
+                Export everything as a PDF or a ZIP.
               </p>
-              <p class="links">
+              <p class="meta">
+                <span>iPhone</span>
                 <a href="https://apps.apple.com/us/app/this-side-up/id6806478365">App Store</a>
                 <a href="https://thissideup.app">thissideup.app</a>
               </p>
-            </li>
-            <li class="app">
-              <div class="app-head">
-                <h3>Steep Notes</h3>
-                <span class="status">Coming soon</span>
-              </div>
-              <p class="app-line">A week of loose thoughts, brewed into a few sentences.</p>
-              <p>
+            </div>
+            <div class="project-media">
+              <img class="icon" src="./assets/icons/thissideup.png" alt="This Side Up app icon" width="72" height="72" />
+              <img class="shot" src="./assets/shots/thissideup.jpg" alt="This Side Up: the list of packages" width="300" height="652" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="num">02</p>
+            <div class="project-text">
+              <p class="tag">Coming soon</p>
+              <h3>Steep Notes</h3>
+              <p class="line">A week of loose thoughts, brewed into a few sentences.</p>
+              <p class="body">
                 Drop in pieces all week: a line from a meeting, a worry, a half-formed idea. At the
                 brew time you pick, Steep turns them into short sentences, and you keep the few worth
                 keeping.
               </p>
-              <p class="links">
+              <p class="meta">
+                <span>iPhone</span>
                 <a href="https://steepnotes.app">steepnotes.app</a>
               </p>
-            </li>
-            <li class="app">
-              <div class="app-head">
-                <h3>Brainfogg</h3>
-                <span class="status">In beta</span>
-              </div>
-              <p class="app-line">Email in. Schedule done.</p>
-              <p>
+            </div>
+            <div class="project-media">
+              <img class="icon" src="./assets/icons/steepnotes.png" alt="Steep Notes app icon" width="72" height="72" />
+              <img class="shot" src="./assets/shots/steepnotes.jpg" alt="Steep Notes: the brew screen" width="300" height="652" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project">
+            <p class="num">03</p>
+            <div class="project-text">
+              <p class="tag tag-beta">In beta</p>
+              <h3>Brainfogg</h3>
+              <p class="line">Email in. Schedule done.</p>
+              <p class="body">
                 Forward a school email to Brainfogg, and it puts the event on your calendar: the date,
-                the time, and what your kid has to bring.
+                the time, and what your kid has to bring. Your partner sees it too.
               </p>
-            </li>
-          </ul>
-        </section>
+              <p class="meta"><span>iPhone</span><span>Android</span></p>
+            </div>
+            <div class="project-media">
+              <img class="icon" src="./assets/icons/brainfogg.png" alt="Brainfogg app icon" width="72" height="72" />
+              <img class="shot" src="./assets/shots/brainfogg.jpg" alt="Brainfogg: today's schedule" width="300" height="652" loading="lazy" />
+            </div>
+          </article>
 
-        <section aria-labelledby="name">
-          <h2 id="name">About the name</h2>
-          <p>
-            A lot of good loose-leaf tea tastes better on the second steep, once the leaves have
-            opened up.
-            That's how we like to build: ship something small, listen to the people using it, then
-            come back and make it better.
+          <div class="minor-grid">
+            <article class="minor">
+              <p class="num num-sm">04</p>
+              <p class="tag">In development</p>
+              <h3>Youth sports team app</h3>
+              <p class="working">Working title</p>
+              <p class="line">One place for a team's coaches and families.</p>
+              <p class="body">
+                The schedule, who's coming, the announcements, and whose turn it is to help, kept
+                together for everyone on the team. We're building it for our own kids' teams first.
+              </p>
+              <p class="meta"><span>iPhone</span><span>Android</span></p>
+            </article>
+
+            <article class="minor">
+              <p class="num num-sm">05</p>
+              <p class="tag">In development</p>
+              <h3 class="with-icon">
+                <img class="icon icon-sm" src="./assets/icons/petrichorr.png" alt="" width="40" height="40" />
+                Petrichorr
+              </h3>
+              <p class="line">A small life in a rainy forest. You can only help from out of sight.</p>
+              <p class="body">
+                A small creature is trying to get by in the rain. You can't tell it what to do. You
+                can leave something just out of view, and watch what it makes of it.
+              </p>
+              <p class="meta"><span>Game</span><span>iPhone</span></p>
+            </article>
+
+            <article class="minor">
+              <p class="num num-sm">06</p>
+              <p class="tag">Planned</p>
+              <h3 class="caps-title">SIGNWRIGHT</h3>
+              <p class="line">Thirty years in a small-town sign shop, 1925 to 1955.</p>
+              <p class="body">
+                Orders come in by letter. You choose the lettering, the weight, the gold leaf. Then the
+                street decides: can anyone read it from a passing car on a rainy night?
+              </p>
+              <p class="meta"><span>Game</span><span>PC</span></p>
+            </article>
+
+            <article class="minor">
+              <p class="num num-sm">07</p>
+              <p class="tag">Early prototype</p>
+              <h3 class="caps-title">MICROBIA</h3>
+              <p class="line">A creature-collecting game where every creature is a microbe.</p>
+              <p class="body">
+                The science is where the ideas come from, not a lesson. It's a fantasy, built from the
+                strangest small things we could find.
+              </p>
+              <p class="meta"><span>Game</span></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="name" class="name" aria-labelledby="name-h">
+        <div class="wrap">
+          <h2 id="name-h" class="rule-head"><span>About the name</span></h2>
+          <blockquote>
+            <p class="quote">Good tea is often better on the second steep.</p>
+          </blockquote>
+          <p class="name-body">
+            The first pour wakes the leaves up. The second is where a lot of loose-leaf tea really
+            opens. That's how we like to build: ship something small, listen to the people using it,
+            then come back and make it better.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section aria-labelledby="contact">
-          <h2 id="contact">Contact</h2>
-          <p>
-            Questions about one of our apps, a billing problem, or anything else:
-            <a href="mailto:support@secondsteeplabs.com">support@secondsteeplabs.com</a>
+      <section id="contact" class="contact" aria-labelledby="contact-h">
+        <div class="wrap contact-inner">
+          <h2 id="contact-h" class="overline">Contact</h2>
+          <p class="contact-line">
+            Questions about one of our apps, a billing problem, or anything else.
           </p>
-        </section>
-      </main>
+          <a class="mail" href="mailto:support@secondsteeplabs.com">support@secondsteeplabs.com</a>
+        </div>
+      </section>
+    </main>
 
-      <footer>
-        <p>Second Steep Labs LLC, a Georgia limited liability company</p>
-        <p>Decatur, Georgia</p>
-        <p>&copy; 2026 Second Steep Labs LLC</p>
-      </footer>
-    </div>
+    <footer>
+      <div class="wrap foot">
+        <p class="foot-mark">Second Steep Labs</p>
+        <div>
+          <p>Second Steep Labs LLC, a Georgia limited liability company</p>
+          <p>Decatur, Georgia</p>
+          <p>&copy; 2026 Second Steep Labs LLC</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
